@@ -3,7 +3,7 @@ branches:
   - master
   sudo: required
   before_install:
-  - openssl aes-256-cbc -K $encrypted_a4d61efd9b88_key -iv $encrypted_a4d61efd9b88_iv -in large-secrets.txt.enc -out build-scripts/large-secrets.txt -d
+  - gem uninstall bundler
   - chmod +x ./build-scripts/install-dependencies.sh
   - chmod +x ./build-scripts/deploy-terraform.sh
   - chmod +x ./build-scripts/inject-secrets.sh

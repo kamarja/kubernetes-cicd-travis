@@ -40,10 +40,9 @@ echo -e "${GREEN}==== Deploying terraform ====${NC}"
 
 
 cd build-scripts
+
 traverse ../prereqs
-
 traverse ../external_dns
-
 traverse ../k8s
 
 echo -e "${GREEN}==== Done deploying terraform  ====${NC}"
